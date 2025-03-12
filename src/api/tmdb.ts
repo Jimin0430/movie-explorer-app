@@ -15,7 +15,6 @@ const BASE_URL =
 const ACCOUNT_ID = process.env.TMDB_ACCOUNT_ID;
 const SESSION_ID = process.env.TMDB_SESSION_ID;
 const ACCESS_TOKEN = process.env.TMDB_ACCESS_TOKEN; // Bearer 토큰 추가
-
 // Axios 인스턴스 생성
 const api = axios.create({
   baseURL: BASE_URL,
@@ -33,6 +32,9 @@ export const getPopularMovies = async (): Promise<MoviesResponse> => {
       page: 1, // ✅ 기본 페이지 번호 설정
     },
   });
+
+  console.log("ACCESS_TOKEN : ", ACCESS_TOKEN);
+
   return response.data;
 };
 
