@@ -1,0 +1,173 @@
+.container {
+  width: 100%;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.backIcon {
+  margin-right: 0.25rem;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .heroSection {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.posterContainer {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .posterContainer {
+    width: 20rem;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+}
+
+.infoContainer {
+  flex-grow: 1;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.star {
+  color: #f59e0b;
+  margin-right: 0.25rem;
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.genre {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+}
+
+.overview {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.favoriteContainer {
+  max-width: 16rem;
+  margin-bottom: 1.5rem;
+}
+
+.memoContainer {
+  margin-top: 1.5rem;
+  background-color: #eff6ff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.memoTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.memoDate {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.memoContent {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.productionCompanies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 8rem;
+  text-align: center;
+}
+
+.companyLogo {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyName {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
